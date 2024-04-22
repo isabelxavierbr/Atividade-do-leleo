@@ -1,0 +1,24 @@
+Como adicionar um repositório local ao GitHub usando o Git
+Antes de adicionar seu repositório local a GitHub usando o Git, você deve autenticar em GitHub na linha de comando. Para obter mais informações, confira "Sobre a autenticação no GitHub".
+
+Crie um repositório no GitHub.com. Para evitar erros, não inicialize o novo repositório com arquivos LEIAME, de licença ou gitignore. É possível adicionar esses arquivos após push do projeto no GitHub. Para obter mais informações, confira "Criar um repositório".
+
+Na parte superior do repositório na página de Configuração Rápida de GitHub.com, clique em  para copiar a URL do repositório remote.
+
+Captura de tela do cabeçalho "Configuração Rápida" em um repositório. Ao lado da URL do repositório remoto, um ícone de dois quadrados sobrepostos está realçado com um contorno laranja.
+Abra Git Bash.
+
+Altere o diretório de trabalho atual para seu projeto local.
+
+Para adicionar a URL do repositório remoto ao qual o repositório local será enviado, execute o seguinte comando. Substitua REMOTE-URL pela URL completa do repositório no GitHub.
+
+git remote add origin REMOTE-URL
+Para obter mais informações, confira "Gerenciar repositórios remote".
+
+Para verificar se você definiu a URL remota corretamente, execute o seguinte comando.
+
+git remote -v
+Para enviar as alterações em seu repositório local ao GitHub.com, execute o seguinte comando.
+
+git push origin main
+Se a ramificação padrão não for denominada "main", substitua "main" pelo nome da ramificação padrão. Para obter mais informações, confira "Sobre ramificações".
